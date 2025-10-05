@@ -13,6 +13,14 @@
             "score": 5,
             "status": "passed",
             "max_score": 5,
+            "name": "test_self_attention",
+            "output": "",
+            "visibility": "visible"
+        },
+        {
+            "score": 5,
+            "status": "passed",
+            "max_score": 5,
             "name": "test_mha_forward",
             "output": "",
             "visibility": "visible"
@@ -23,14 +31,6 @@
             "max_score": 5,
             "name": "test_lm_forward_on_cpu",
             "output": "",
-            "visibility": "visible"
-        },
-        {
-            "score": 0,
-            "status": "failed",
-            "max_score": 5,
-            "name": "test_self_attention",
-            "output": "    @max_score(5)\n    def test_self_attention():\n        mha = MultiHeadAttention(d, h, 0.0)\n        x = torch.rand(b, s, d)\n        q, kT, v = mha.q_kT_v(x)\n        k = rearrange(kT, \"b h hd s -> b h s hd\")\n    \n        attn = mha.self_attention(q, kT, v)\n        attn_ref_multihead = F.scaled_dot_product_attention(q, k, v, is_causal=True)\n        attn_ref = rearrange(attn_ref_multihead, \"b h s hd -> b s (h hd)\")\n    \n        assert torch.allclose(attn, attn_ref, atol=1e-5, rtol=1e-3)\n    \n        x = torch.rand(2, 5, d)\n        q, kT, v = mha.q_kT_v(x)\n        k = rearrange(kT, \"b h hd s -> b h s hd\")\n        attention_mask = torch.tensor(\n            [[0.0, 0.0, 1.0, 1.0, 1.0], [1.0, 1.0, 1.0, 1.0, 1.0]]\n        )\n        attention_mask_with_causal = torch.tensor(\n            [\n                [\n                    [False, False, False, False, False],\n                    [False, False, False, False, False],\n                    [False, False, True, False, False],\n                    [False, False, True, True, False],\n                    [False, False, True, True, True],\n                ],\n                [\n                    [True, False, False, False, False],\n                    [True, True, False, False, False],\n                    [True, True, True, False, False],\n                    [True, True, True, True, False],\n                    [True, True, True, True, True],\n                ],\n            ]\n        )[:, None]\n        attn = mha.self_attention(q, kT, v, attention_mask=attention_mask)\n        attn_ref_multihead = F.scaled_dot_product_attention(\n            q, k, v, attn_mask=attention_mask_with_causal\n        )\n        attn_ref = rearrange(attn_ref_multihead, \"b h s hd -> b s (h hd)\")\n    \n>       assert torch.allclose(\n            attn[~attn_ref.isnan()], attn_ref[~attn_ref.isnan()], atol=1e-5, rtol=1e-3\n        )\nE       assert False\nE        +  where False = <built-in method allclose of type object at 0x105200b10>(tensor([0.4407, 0.0186, 0.7097,  ..., 0.0081, 0.1554, 0.2007],\\n       grad_fn=<IndexBackward0>), tensor([0.0000, 0.0000, 0.0000,  ..., 0.0081, 0.1554, 0.2007],\\n       grad_fn=<IndexBackward0>), atol=1e-05, rtol=0.001)\nE        +    where <built-in method allclose of type object at 0x105200b10> = torch.allclose\nNone\ntests/test_model.py:67: AssertionError",
             "visibility": "visible"
         }
     ]

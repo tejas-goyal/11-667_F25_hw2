@@ -153,23 +153,29 @@ class MultiHeadAttention(nn.Module):
         if attention_mask is None:
             mask = causal_mask
         else:
-            padding_mask = attention_mask.unsqueeze(1) @ attention_mask.unsqueeze(2)  # B x S x S
-            padding_mask = padding_mask.bool()  # Convert to boolean
-            mask = padding_mask.unsqueeze(1) & causal_mask  # B x 1 x S x S
+            # Only mask out KEY positions (columns), not QUERY positions (rows)
+            # Shape: B x 1 x 1 x S (broadcasts to B x 1 x S x S)
+            #padding_mask = attention_mask.unsqueeze(1) @ attention_mask.unsqueeze(2)  # B x S x S
+            #padding_mask = padding_mask.bool()  # Convert to boolean
+            #mask = padding_mask.unsqueeze(1) & causal_mask  # B x 1 x S x S
+            padding_mask = attention_mask.unsqueeze(1).unsqueeze(2).bool()  # B x 1 x 1 x S
+            mask = padding_mask & causal_mask  # B x 1 x S x S
 
         """
-        Fill unmasked_attn_logits with float_min wherever causal mask has value False.
+        Fill unmasked_attn_logits with -inf wherever causal mask has value False.
 
         Hint: torch.masked_fill
         """
-        float_min = torch.finfo(q.dtype).min
-        attn_logits = unmasked_attn_logits.masked_fill(~mask, float_min)
+        attn_logits = unmasked_attn_logits.masked_fill(~mask, float('-inf'))
         attn_weights = F.softmax(attn_logits, dim=-1)  # B x H x S x S
         attn_weights = self.dropout(attn_weights)
 
         # scale value by the attention weights.
         attn = torch.matmul(attn_weights, v)  # B x H x S x HD
         attn = rearrange(attn, 'b h s hd -> b s (h hd)')  # B x S x D
+        
+        # Replace NaN values with zeros (happens when all attention logits are masked)
+        attn = torch.nan_to_num(attn, nan=0.0)
 
         return attn
     
