@@ -9,7 +9,7 @@ device: auto
 batch_size: 128
 seq_len: 256
 num_warmup_steps: 600
-num_training_steps: 15000
+num_training_steps: 12000
 grad_accumulation_steps: 2
 max_lr: 0.0005
-min_lr: 2.0e-5
+min_lr: 3.0e-5
