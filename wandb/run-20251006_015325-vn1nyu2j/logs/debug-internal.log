@@ -1,0 +1,21 @@
+{"time":"2025-10-06T01:53:25.692781211Z","level":"INFO","msg":"stream: starting","core version":"0.22.1"}
+{"time":"2025-10-06T01:53:26.034578168Z","level":"INFO","msg":"stream: created new stream","id":"vn1nyu2j"}
+{"time":"2025-10-06T01:53:26.035157401Z","level":"INFO","msg":"handler: started","stream_id":"vn1nyu2j"}
+{"time":"2025-10-06T01:53:26.040373438Z","level":"INFO","msg":"stream: started","id":"vn1nyu2j"}
+{"time":"2025-10-06T01:53:26.040435128Z","level":"INFO","msg":"writer: started","stream_id":"vn1nyu2j"}
+{"time":"2025-10-06T01:53:26.040449477Z","level":"INFO","msg":"sender: started","stream_id":"vn1nyu2j"}
+{"time":"2025-10-06T01:53:41.93758917Z","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":1070}
+{"time":"2025-10-06T01:53:42.111748459Z","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":50}
+{"time":"2025-10-06T01:53:56.941633612Z","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":4861}
+{"time":"2025-10-06T01:53:57.098665077Z","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":46}
+{"time":"2025-10-06T01:54:11.952317324Z","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":8727}
+{"time":"2025-10-06T01:54:12.141159221Z","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":54}
+{"time":"2025-10-06T01:54:26.942015036Z","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":12514}
+{"time":"2025-10-06T01:54:27.128450746Z","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":50}
+{"time":"2025-10-06T01:54:41.934670294Z","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":16333}
+{"time":"2025-10-06T01:54:42.065902125Z","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":34}
+{"time":"2025-10-06T01:54:49.860164446Z","level":"INFO","msg":"stream: closing","id":"vn1nyu2j"}
+{"time":"2025-10-06T01:54:51.29514355Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-06T01:54:51.551965525Z","level":"INFO","msg":"handler: closed","stream_id":"vn1nyu2j"}
+{"time":"2025-10-06T01:54:51.553560436Z","level":"INFO","msg":"sender: closed","stream_id":"vn1nyu2j"}
+{"time":"2025-10-06T01:54:51.553662771Z","level":"INFO","msg":"stream: closed","id":"vn1nyu2j"}

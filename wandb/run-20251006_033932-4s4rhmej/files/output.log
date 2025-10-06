@@ -1,0 +1,16 @@
+model parameters = 19M
+Your model is [1;36m77.[0m0MB. This should be within the 100MB limit of Gradescope.
+train dataset tokens = 520M
+train FLOPs = [1;36m1.20e+17[0m
+[31mWARNING: your train FLOPs is [0m[1;31m1.20e+17[0m[31m. This is more than the max compute that we[0m
+[31mallow [0m[1;31m([0m[1;31m1e+17[0m[1;31m)[0m[31m. Please reduce your model size or train steps.[0m
+  0% 22/15000 [00:07<1:25:09,  2.93it/s, train loss=10.72, TFLOPS=25.5]
+Traceback (most recent call last):
+  File "/content/drive/MyDrive/11-667_F25_hw2/src/lm/train.py", line 334, in <module>
+    main()
+  File "/content/drive/MyDrive/11-667_F25_hw2/src/lm/train.py", line 309, in main
+    train(
+  File "/content/drive/MyDrive/11-667_F25_hw2/src/lm/train.py", line 177, in train
+    loss_f = loss.item()
+             ^^^^^^^^^^^
+KeyboardInterrupt

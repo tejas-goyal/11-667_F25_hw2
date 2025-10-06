@@ -1,0 +1,11 @@
+{"time":"2025-10-06T03:37:30.239959781Z","level":"INFO","msg":"stream: starting","core version":"0.22.1"}
+{"time":"2025-10-06T03:37:30.583672318Z","level":"INFO","msg":"stream: created new stream","id":"zbbo2qmd"}
+{"time":"2025-10-06T03:37:30.58419933Z","level":"INFO","msg":"handler: started","stream_id":"zbbo2qmd"}
+{"time":"2025-10-06T03:37:30.606727746Z","level":"INFO","msg":"stream: started","id":"zbbo2qmd"}
+{"time":"2025-10-06T03:37:30.606767906Z","level":"INFO","msg":"writer: started","stream_id":"zbbo2qmd"}
+{"time":"2025-10-06T03:37:30.606778256Z","level":"INFO","msg":"sender: started","stream_id":"zbbo2qmd"}
+{"time":"2025-10-06T03:37:56.76830773Z","level":"INFO","msg":"stream: closing","id":"zbbo2qmd"}
+{"time":"2025-10-06T03:37:58.172128327Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-10-06T03:37:58.442433606Z","level":"INFO","msg":"handler: closed","stream_id":"zbbo2qmd"}
+{"time":"2025-10-06T03:37:58.444599309Z","level":"INFO","msg":"sender: closed","stream_id":"zbbo2qmd"}
+{"time":"2025-10-06T03:37:58.444773881Z","level":"INFO","msg":"stream: closed","id":"zbbo2qmd"}

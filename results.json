@@ -2,11 +2,51 @@
     "stdout_visibility": "visible",
     "tests": [
         {
+            "score": 5,
+            "status": "passed",
+            "max_score": 5,
+            "name": "test_random_batch_sampler",
+            "output": "",
+            "visibility": "visible"
+        },
+        {
+            "score": 5,
+            "status": "passed",
+            "max_score": 5,
+            "name": "test_sequential_batch_sampler",
+            "output": "",
+            "visibility": "visible"
+        },
+        {
+            "score": 5,
+            "status": "passed",
+            "max_score": 5,
+            "name": "test_cosine_lr_schedule",
+            "output": "",
+            "visibility": "visible"
+        },
+        {
+            "score": 5,
+            "status": "passed",
+            "max_score": 5,
+            "name": "test_compute_language_modeling_loss",
+            "output": "",
+            "visibility": "visible"
+        },
+        {
+            "score": 5,
+            "status": "passed",
+            "max_score": 5,
+            "name": "test_train",
+            "output": "",
+            "visibility": "visible"
+        },
+        {
             "score": 0,
-            "status": "failed",
+            "status": "passed",
             "max_score": 0,
-            "name": "test_env",
-            "output": "    def test_env():\n        env_info = get_env_info()\n        assert env_info.torch_version.startswith(\"2.\")\n>       assert env_info.python_version.startswith(\"3.11\")\nE       AssertionError: assert False\nE        +  where False = <built-in method startswith of str object at 0x109ad6970>('3.11')\nE        +    where <built-in method startswith of str object at 0x109ad6970> = '3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ] (64-bit runtime)'.startswith\nE        +      where '3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ] (64-bit runtime)' = SystemEnv(torch_version='2.8.0', is_debug_build='False', cuda_compiled_version=None, gcc_version=None, clang_version='...ion='N/A', miopen_runtime_version='N/A', caching_allocator_config='', is_xnnpack_available='True', cpu_info='Apple M1').python_version\nNone\ntests/test_env.py:443: AssertionError",
+            "name": "test_train_sanity_check",
+            "output": "",
             "visibility": "visible"
         }
     ]

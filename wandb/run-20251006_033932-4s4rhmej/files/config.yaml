@@ -1,0 +1,80 @@
+_wandb:
+    value:
+        cli_version: 0.22.1
+        e:
+            zty2adfi4wsrzwdvmkft1p0jw0pa33da:
+                args:
+                    - configs/final-model-v2.yaml
+                codePath: src/lm/train.py
+                codePathLocal: src/lm/train.py
+                cpu_count: 6
+                cpu_count_logical: 12
+                cudaVersion: "12.4"
+                disk:
+                    /:
+                        total: "253055008768"
+                        used: "43521978368"
+                email: tejasgoy@andrew.cmu.edu
+                executable: /usr/bin/python3
+                git:
+                    commit: d8e5670e27f7a5313684f514aa3d4631a52c54dd
+                    remote: https://github.com/tejas-goyal/11-667_F25_hw2.git
+                gpu: NVIDIA A100-SXM4-80GB
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-39264224-c7f3-a45c-bb10-27c4c9a28bdd
+                host: b548b03c81ee
+                memory:
+                    total: "179370299392"
+                os: Linux-6.6.97+-x86_64-with-glibc2.35
+                program: /content/drive/MyDrive/11-667_F25_hw2/src/lm/train.py
+                python: CPython 3.12.11
+                root: /content/drive/MyDrive/11-667_F25_hw2
+                startedAt: "2025-10-06T03:39:32.820292Z"
+                writerId: zty2adfi4wsrzwdvmkft1p0jw0pa33da
+        m: []
+        python_version: 3.12.11
+        t:
+            "1":
+                - 1
+                - 105
+            "2":
+                - 1
+                - 105
+            "3":
+                - 16
+                - 61
+            "4": 3.12.11
+            "5": 0.22.1
+            "12": 0.22.1
+            "13": linux-x86_64
+batch_size:
+    value: 128
+device:
+    value: auto
+grad_accumulation_steps:
+    value: 2
+max_lr:
+    value: 0.0005
+min_lr:
+    value: 2e-05
+model_config:
+    value:
+        n_embd: 256
+        n_head: 8
+        n_layer: 8
+        n_positions: 256
+num_training_steps:
+    value: 15000
+num_warmup_steps:
+    value: 600
+output_dir:
+    value: outputs/final-model-v2
+seq_len:
+    value: 256
+tokenizer_encoding:
+    value: gpt2

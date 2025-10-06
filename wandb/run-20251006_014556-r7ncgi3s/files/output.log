@@ -1,0 +1,10 @@
+model parameters = 2M
+Your model is [1;36m6.[0m6MB. This should be within the 100MB limit of Gradescope.
+train dataset tokens = 520M
+train FLOPs = [1;36m4.88e+14[0m
+100% 12000/12000 [02:43<00:00, 73.54it/s, train loss=6.35, TFLOPS=3.2]
+model saved to outputs/hp-config1-long-training/model.pt
+evaluating..: 1220it [00:05, 231.74it/s]
+evaluation results: [1m{[0m[32m"val-loss"[0m: [1;36m6.154847592213115[0m, [32m"val-perplexity"[0m:
+[1;36m470.9950536766172[0m[1m}[0m
+done!

@@ -1,0 +1,43 @@
+{
+  "os":  "Linux-6.6.97+-x86_64-with-glibc2.35",
+  "python":  "CPython 3.12.11",
+  "startedAt":  "2025-10-06T03:41:15.924614Z",
+  "args":  [
+    "configs/final-model-v2.yaml"
+  ],
+  "program":  "/content/drive/MyDrive/11-667_F25_hw2/src/lm/train.py",
+  "codePath":  "src/lm/train.py",
+  "codePathLocal":  "src/lm/train.py",
+  "git":  {
+    "remote":  "https://github.com/tejas-goyal/11-667_F25_hw2.git",
+    "commit":  "c9b065ec5c8b0158cdbb373b25b3ffd94ab0225d"
+  },
+  "email":  "tejasgoy@andrew.cmu.edu",
+  "root":  "/content/drive/MyDrive/11-667_F25_hw2",
+  "host":  "b548b03c81ee",
+  "executable":  "/usr/bin/python3",
+  "cpu_count":  6,
+  "cpu_count_logical":  12,
+  "gpu":  "NVIDIA A100-SXM4-80GB",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "253055008768",
+      "used":  "43523010560"
+    }
+  },
+  "memory":  {
+    "total":  "179370299392"
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA A100-SXM4-80GB",
+      "memoryTotal":  "85899345920",
+      "cudaCores":  6912,
+      "architecture":  "Ampere",
+      "uuid":  "GPU-39264224-c7f3-a45c-bb10-27c4c9a28bdd"
+    }
+  ],
+  "cudaVersion":  "12.4",
+  "writerId":  "0yuhbokg9asjbs0f8dbgw1581t0my4xs"
+}

@@ -1,0 +1,23 @@
+2025-10-06 03:37:30,019 INFO    MainThread:51893 [wandb_setup.py:_flush():81] Current SDK version is 0.22.1
+2025-10-06 03:37:30,019 INFO    MainThread:51893 [wandb_setup.py:_flush():81] Configure stats pid to 51893
+2025-10-06 03:37:30,020 INFO    MainThread:51893 [wandb_setup.py:_flush():81] Loading settings from /root/.config/wandb/settings
+2025-10-06 03:37:30,021 INFO    MainThread:51893 [wandb_setup.py:_flush():81] Loading settings from /content/drive/MyDrive/11-667_F25_hw2/wandb/settings
+2025-10-06 03:37:30,021 INFO    MainThread:51893 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2025-10-06 03:37:30,021 INFO    MainThread:51893 [wandb_init.py:setup_run_log_directory():705] Logging user logs to /content/drive/MyDrive/11-667_F25_hw2/wandb/run-20251006_033729-zbbo2qmd/logs/debug.log
+2025-10-06 03:37:30,021 INFO    MainThread:51893 [wandb_init.py:setup_run_log_directory():706] Logging internal logs to /content/drive/MyDrive/11-667_F25_hw2/wandb/run-20251006_033729-zbbo2qmd/logs/debug-internal.log
+2025-10-06 03:37:30,021 INFO    MainThread:51893 [wandb_init.py:init():832] calling init triggers
+2025-10-06 03:37:30,021 INFO    MainThread:51893 [wandb_init.py:init():837] wandb.init called with sweep_config: {}
+config: {'output_dir': 'outputs/final-model-v2', 'tokenizer_encoding': 'gpt2', 'model_config': {'n_embd': 256, 'n_head': 8, 'n_positions': 256, 'n_layer': 8}, 'device': 'auto', 'batch_size': 128, 'seq_len': 256, 'num_warmup_steps': 1000, 'num_training_steps': 50000, 'grad_accumulation_steps': 2, 'max_lr': 0.0005, 'min_lr': 2e-05, '_wandb': {}}
+2025-10-06 03:37:30,021 INFO    MainThread:51893 [wandb_init.py:init():880] starting backend
+2025-10-06 03:37:30,228 INFO    MainThread:51893 [wandb_init.py:init():883] sending inform_init request
+2025-10-06 03:37:30,235 INFO    MainThread:51893 [wandb_init.py:init():891] backend started and connected
+2025-10-06 03:37:30,237 INFO    MainThread:51893 [wandb_init.py:init():961] updated telemetry
+2025-10-06 03:37:30,281 INFO    MainThread:51893 [wandb_init.py:init():985] communicating run to backend with 90.0 second timeout
+2025-10-06 03:37:31,009 INFO    MainThread:51893 [wandb_init.py:init():1036] starting run threads in backend
+2025-10-06 03:37:31,498 INFO    MainThread:51893 [wandb_run.py:_console_start():2506] atexit reg
+2025-10-06 03:37:31,499 INFO    MainThread:51893 [wandb_run.py:_redirect():2354] redirect: wrap_raw
+2025-10-06 03:37:31,499 INFO    MainThread:51893 [wandb_run.py:_redirect():2423] Wrapping output streams.
+2025-10-06 03:37:31,500 INFO    MainThread:51893 [wandb_run.py:_redirect():2446] Redirects installed.
+2025-10-06 03:37:31,504 INFO    MainThread:51893 [wandb_init.py:init():1076] run started, returning control to user process
+2025-10-06 03:37:56,768 INFO    wandb-AsyncioManager-main:51893 [service_client.py:_forward_responses():80] Reached EOF.
+2025-10-06 03:37:56,768 INFO    wandb-AsyncioManager-main:51893 [mailbox.py:close():137] Closing mailbox, abandoning 1 handles.
