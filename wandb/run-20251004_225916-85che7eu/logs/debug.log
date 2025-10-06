@@ -1,0 +1,23 @@
+2025-10-04 22:59:16,716 INFO    MainThread:1020 [wandb_setup.py:_flush():81] Current SDK version is 0.22.0
+2025-10-04 22:59:16,716 INFO    MainThread:1020 [wandb_setup.py:_flush():81] Configure stats pid to 1020
+2025-10-04 22:59:16,716 INFO    MainThread:1020 [wandb_setup.py:_flush():81] Loading settings from /Users/tejas/.config/wandb/settings
+2025-10-04 22:59:16,716 INFO    MainThread:1020 [wandb_setup.py:_flush():81] Loading settings from /Users/tejas/Documents/personal/11667/11-667_F25_hw2/wandb/settings
+2025-10-04 22:59:16,716 INFO    MainThread:1020 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2025-10-04 22:59:16,716 INFO    MainThread:1020 [wandb_init.py:setup_run_log_directory():686] Logging user logs to /Users/tejas/Documents/personal/11667/11-667_F25_hw2/wandb/run-20251004_225916-85che7eu/logs/debug.log
+2025-10-04 22:59:16,716 INFO    MainThread:1020 [wandb_init.py:setup_run_log_directory():687] Logging internal logs to /Users/tejas/Documents/personal/11667/11-667_F25_hw2/wandb/run-20251004_225916-85che7eu/logs/debug-internal.log
+2025-10-04 22:59:16,716 INFO    MainThread:1020 [wandb_init.py:init():813] calling init triggers
+2025-10-04 22:59:16,716 INFO    MainThread:1020 [wandb_init.py:init():818] wandb.init called with sweep_config: {}
+config: {'output_dir': 'outputs/GPT-tiny', 'tokenizer_encoding': 'gpt2', 'model_config': {'n_embd': 32, 'n_head': 2, 'n_positions': 128, 'n_layer': 2}, 'device': 'auto', 'batch_size': 32, 'seq_len': 128, 'num_warmup_steps': 10, 'num_training_steps': 2000, 'grad_accumulation_steps': 1, 'min_lr': 0.0001, 'max_lr': 0.0005, '_wandb': {}}
+2025-10-04 22:59:16,717 INFO    MainThread:1020 [wandb_init.py:init():861] starting backend
+2025-10-04 22:59:17,751 INFO    MainThread:1020 [wandb_init.py:init():864] sending inform_init request
+2025-10-04 22:59:17,787 INFO    MainThread:1020 [wandb_init.py:init():872] backend started and connected
+2025-10-04 22:59:17,789 INFO    MainThread:1020 [wandb_init.py:init():942] updated telemetry
+2025-10-04 22:59:17,816 INFO    MainThread:1020 [wandb_init.py:init():966] communicating run to backend with 90.0 second timeout
+2025-10-04 22:59:18,397 INFO    MainThread:1020 [wandb_init.py:init():1017] starting run threads in backend
+2025-10-04 22:59:18,627 INFO    MainThread:1020 [wandb_run.py:_console_start():2506] atexit reg
+2025-10-04 22:59:18,627 INFO    MainThread:1020 [wandb_run.py:_redirect():2354] redirect: wrap_raw
+2025-10-04 22:59:18,627 INFO    MainThread:1020 [wandb_run.py:_redirect():2423] Wrapping output streams.
+2025-10-04 22:59:18,627 INFO    MainThread:1020 [wandb_run.py:_redirect():2446] Redirects installed.
+2025-10-04 22:59:18,628 INFO    MainThread:1020 [wandb_init.py:init():1057] run started, returning control to user process
+2025-10-04 23:20:44,140 INFO    wandb-AsyncioManager-main:1020 [service_client.py:_forward_responses():84] Reached EOF.
+2025-10-04 23:20:44,144 INFO    wandb-AsyncioManager-main:1020 [mailbox.py:close():137] Closing mailbox, abandoning 1 handles.

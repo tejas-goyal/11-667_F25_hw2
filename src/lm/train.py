@@ -31,13 +31,11 @@ def random_batch_sampler(
     tokens: torch.LongTensor, device: str, batch_size: int, seq_len: int
 ) -> Iterator[torch.LongTensor]:
     """An infinite generator that samples batches of sequences from the tokens.
-
     Args:
         tokens: a 1d torch tensor of token ids
         device: the device to put the batch on
         batch_size: the batch size of the output tensor (B)
         seq_len: the sequence length of the output tensor (S)
-
     Returns:
         An infinite generator that samples batches of sequences from the
         tokens. Each batch has shape (B x S). Every sequence in the batch is
@@ -47,10 +45,8 @@ def random_batch_sampler(
     num_tokens = len(tokens)
     max_start_idx = num_tokens - seq_len 
     while True:
-        start_idx = torch.randint(0, max_start_idx, (batch_size,))
-        
+        start_idx = torch.randint(0, max_start_idx+1, (batch_size,))
         batch = torch.stack([tokens[start:start+seq_len] for start in start_idx])
-        
         yield batch.to(device)
 
 
@@ -181,6 +177,8 @@ def train(
             loss_f = loss.item()
             losses.append(loss_f)
 
+        optimizer.step()
+        optimizer.zero_grad()
         # TODO: update the model using the accumulated gradients
         loss_mean = np.mean(losses).item()
 

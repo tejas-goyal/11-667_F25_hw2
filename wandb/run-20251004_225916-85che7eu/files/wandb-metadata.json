@@ -1,0 +1,40 @@
+{
+  "os":  "macOS-15.3.1-arm64-arm-64bit-Mach-O",
+  "python":  "CPython 3.13.5",
+  "startedAt":  "2025-10-05T02:59:16.714431Z",
+  "args":  [
+    "configs/GPT-tiny.yaml"
+  ],
+  "program":  "/Users/tejas/Documents/personal/11667/11-667_F25_hw2/src/lm/train.py",
+  "codePath":  "src/lm/train.py",
+  "codePathLocal":  "src/lm/train.py",
+  "git":  {
+    "remote":  "git@github.com:tejas-goyal/11-667_F25_hw2.git",
+    "commit":  "bcde0b067779b7fa9b1b19d37f5fb946cc5ce7b7"
+  },
+  "email":  "tejasgoy@andrew.cmu.edu",
+  "root":  "/Users/tejas/Documents/personal/11667/11-667_F25_hw2",
+  "host":  "Tejass-MacBook-Pro.local",
+  "executable":  "/Users/tejas/miniconda3/bin/python",
+  "cpu_count":  8,
+  "cpu_count_logical":  8,
+  "disk":  {
+    "/":  {
+      "total":  "994662584320",
+      "used":  "167974014976"
+    }
+  },
+  "memory":  {
+    "total":  "17179869184"
+  },
+  "apple":  {
+    "name":  "Apple M1",
+    "ecpuCores":  4,
+    "pcpuCores":  4,
+    "gpuCores":  8,
+    "memoryGb":  16,
+    "swapTotalBytes":  "26843545600",
+    "ramTotalBytes":  "17179869184"
+  },
+  "writerId":  "5px1xir2xfpwxtlumwhstowoelamtuyp"
+}

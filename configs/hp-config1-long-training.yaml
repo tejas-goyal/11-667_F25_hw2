@@ -1,0 +1,15 @@
+output_dir: outputs/hp-config1-long-training
+tokenizer_encoding: gpt2
+model_config:
+  n_embd: 32
+  n_head: 2
+  n_positions: 128
+  n_layer: 2
+device: auto
+batch_size: 32
+seq_len: 128
+num_warmup_steps: 100
+num_training_steps: 12000
+grad_accumulation_steps: 1
+min_lr: 1e-4
+max_lr: 5e-4
