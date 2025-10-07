@@ -72,10 +72,12 @@ def generate_pythia(
             batch_prefixes, return_tensors="pt", padding=True
         ).to(device)
 
+        # Ensure temperature is not too low to avoid numerical issues
+        safe_temperature = max(temperature, 0.5)
         outputs = model.generate(
             **tokenized_prefixes,
             max_new_tokens=max_new_tokens,
-            temperature=temperature,
+            temperature=safe_temperature,
             do_sample=True,
             pad_token_id=tokenizer.eos_token_id,
             eos_token_id=tokenizer.eos_token_id,
@@ -133,7 +135,7 @@ def main():
     device = determine_device()
 
     # initialize pythia tokenizer and model
-    model_name = "EleutherAI/pythia-6.9b"
+    model_name = "EleutherAI/pythia-1.4b" #change model name here if you want to use a different pythia model
     tokenizer, model = initialize_pythia(model_name, device)
 
     # generate and save outputs
